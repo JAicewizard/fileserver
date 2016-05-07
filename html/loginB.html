@@ -1,0 +1,18 @@
+  <div>
+	this is the login pageplease login or register
+</div>
+<div id="loginpage">
+	<div id="lrc">
+		<span id="LR">login</span><span id="LR">register</span>
+	</div>
+	<form id="login" method="post">
+		{% module xsrf_form_html() %}
+		<input type="text" name="name" id="name" class="login" />
+		<label class="lbl">naam</label>
+		<input type="text" name="pass" id="pass" class="login" />
+		<label class="lbl">wachtwoord</label>
+	</form>
+	<button id="loginBTN">
+		login
+	</button>
+</div>
